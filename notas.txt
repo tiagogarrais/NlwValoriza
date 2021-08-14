@@ -1,0 +1,40 @@
+Anotações gerais
+
+Passos executados para criar o projeto:
+
+Criar a pasta do projeto e entrar nela via terminal
+
+Inicializar o projeto (isso vai criar o arquivo package.json)
+yarn init -y
+
+Adicionar TypeScript no projeto (isso vai criar a pasta node_modules e o arquivo yarn.lock)
+yarn add typescript -D
+
+Inicializar Typescript (isso vai criar o arquivo tsconfig.json)
+yarn tsc --init
+
+Abrir o arquivo tsconfig.json e trocar true para false na informação strict (linha 28)
+
+Instalar express para gerenciar rotas
+yarn add express
+
+Instalar types do express
+yarn add @types/express
+
+Instalar ts-node-dev
+yarn add ts-node-dev -D
+
+Criar uma pasta “src” e dentro dela um arquivo “server.ts”
+
+Adicionar ao arquivo package.json o script que está logo abaixo
+"scripts": {
+    "dev": "ts-node-dev src/server.ts"
+  }
+
+Instalar dependências do banco de dados
+yarn add typeorm reflect-metadata sqlite3
+
+Instalar biblioteca para gerar Ids únicos
+yarn add uuid
+yarn add @types/uuid -D
+
