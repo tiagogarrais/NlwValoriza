@@ -38,3 +38,6 @@ Instalar biblioteca para gerar Ids únicos
 yarn add uuid
 yarn add @types/uuid -D
 
+Instalar biblioteca para receber erros provindos de funções assíncronas
+yarn add express-async-errors
+
